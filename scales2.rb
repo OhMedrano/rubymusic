@@ -2,20 +2,19 @@ puts "Give me the notes in the scale"
 text = gets.chomp
 
 scale = text.split ("")
+dorian = scale.rotate
+phyrgian = scale.rotate!(2)
 
 
-def Dorian(scale)
-	dorian = []
-	scale.rotate << dorian
-end 
 
-puts "Would you like to know the dorian mode of it?"
+puts "Would you like to know the dorian mode of it? press 1, press 2 for the phyrigan"
 answer = gets.chomp
 
 
-if answer == "yes"
+if answer == "1"
 	print dorian
-else
-	print "Ok, no modes for you."
+elsif answer == "2"
+	print "Your mode is Phyrgian, #{phyrgian} and your notes for the chord is #{phyrgian[0]},#{phyrgian[2]}, and #{phyrgian[4]}"
+else 
+	print "alright no modes?"
 end
-
