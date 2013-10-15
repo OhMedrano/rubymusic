@@ -4,7 +4,7 @@ class Weapon
 	attr_accessor :critatk
 	attr_accessor :name
 
-	def intialize(weap = {})
+	def initialize(weap = {})
 		@type = weap[:type]
 		@dmg = weap[:basedmg]
 		@critic = weap[:critatk]
@@ -13,13 +13,15 @@ class Weapon
 
 	def attack 
 		puts "#{char} has used #{weap[:name]} for #{weap[:basedmg]}!"
+	end
 end
+
 
 class Armor 
 	attr_accessor :type
 	attr_accessor :def
 
-	def intialize(arm = {})
+	def initialize(arm = {})
 		@type = arm[:type]
 		@defen = arm[:def]
 	end

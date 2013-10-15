@@ -3,9 +3,9 @@ class Character
 	attr_accessor :sex
 	attr_accessor :age
 
-	def intialize(stats ={})
+	def initialize(stats = {})
 		@name = stats[:name]
-		@gender = stats[:sex]
+		@sex = stats[:sex]
 		@age = stats[:age]
 
 	end
