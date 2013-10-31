@@ -22,3 +22,19 @@ char1 = Character.new({name: name, sex: gen, age: age})
 puts char1.name 
 puts char1.age 
 puts char1.sex
+
+
+#I am still working on this part, seeing if the information is correct or not.
+
+# puts "Is this correct?"
+# chan = gets.chomp
+# 
+# if chan == "no"
+# 	puts "Damnit, let's try again"
+
+
+puts "So let's start our journey #{char1.name}"
+
+
+
+
